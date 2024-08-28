@@ -17,19 +17,20 @@
       <span id="logo">#A</span>
     </header>
     <section id="input">
-      <form>
-        <textarea id="user-text" placeholder="Digite seu texto"></textarea>
-        <div class="warn">
-          <div class="info-icon"></div>
-          <span>Apenas letras minúsculas e sem acento</span>
-        </div>
-        <div class="submit-buttons">
-          <button type="submit" id="encrypt">Criptografar</button>
-          <button type="submit" id="decrypt">Descriptografar</button>
-        </div>
-      </form>
+      <textarea id="user-text" placeholder="Digite seu texto"></textarea>
+      <div class="warn">
+        <div class="info-icon"></div>
+        <span>Apenas letras minúsculas e sem acento</span>
+      </div>
+      <div class="submit-buttons">
+        <button onclick="encryptBtn()" id="encrypt">Criptografar</button>
+        <button onclick="decryptBtn()" id="decrypt">Descriptografar</button>
+      </div>
     </section>
     <section id="output">
+      <div id="message">
+        <strong id="output-message"></strong>
+      </div>
       <div id="no-input">
         <div id="no-input-img" role="img" aria-label="Arte linear de uma mulher pensando, com um caderno e uma caneta em mãos"></div>
         <strong class="heavy">Nenhuma mensagem encontrada</strong>
@@ -40,5 +41,6 @@
   <footer class="light">
     <a href="https://www.linkedin.com/in/victor-gnoato-a88803268">Victor Gnoato @ 2024</a>
   </footer>
+  <script src="./js/script.js"></script>
 </body>
 </html>

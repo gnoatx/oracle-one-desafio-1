@@ -101,6 +101,11 @@ body {
     border-radius: var(--radius);
 }
 
+#message {
+    width: 100%;
+    height: fit-content;
+}
+
 #no-input {
     display: flex;
     flex-direction: column;
@@ -111,7 +116,7 @@ body {
     text-align: center;
 }
 
-#no-input strong {
+#output strong {
     font-size: 1.5rem;
     color: var(--highlight);
 }
