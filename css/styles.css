@@ -141,3 +141,53 @@ footer a {
     color: var(--highlight);
     text-decoration: underline;
 }
+
+@media (max-width: 1425px) {
+    header {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .container {
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #user-text {
+        height: 40vh;
+        padding: 20px 20px 0 0;
+    }
+
+    .submit-buttons {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .submit-buttons button {
+        padding: 1.5rem 2.5rem;
+    }
+
+    #output {
+        max-width: none;
+        width: 100%;
+    }
+
+    #no-input-img {
+        display: none;
+    }
+
+    footer {
+        bottom: unset;
+        top: 0;
+        right: 0;
+    }
+
+    @media (max-width: 600px) {
+        .submit-buttons {
+            flex-direction: column;
+            gap: 15px;
+        }
+    }
+}
