@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="./css/global.css"/>
+  <link rel="stylesheet" href="./css/styles.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Zeyada&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <title>Decodificador de Texto</title>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <span id="logo">#A</span>
+    </header>
+    <section id="input">
+      <form>
+        <textarea id="user-text" placeholder="Digite seu texto"></textarea>
+        <div class="warn">
+          <div class="info-icon"></div>
+          <span>Apenas letras minúsculas e sem acento</span>
+        </div>
+        <div class="submit-buttons">
+          <button type="submit" id="encrypt">Criptografar</button>
+          <button type="submit" id="decrypt">Descriptografar</button>
+        </div>
+      </form>
+    </section>
+    <section id="output">
+      <div id="no-input">
+        <div id="no-input-img" role="img" aria-label="Arte linear de uma mulher pensando, com um caderno e uma caneta em mãos"></div>
+        <strong class="heavy">Nenhuma mensagem encontrada</strong>
+        <p>Digite um texto que você deseja criptografar ou descriptografar</p>
+      </div>
+    </section>
+  </div>
+  <footer class="light">
+    Victor Gnoato @ 2024
+  </footer>
+</body>
+</html>
