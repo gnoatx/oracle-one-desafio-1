@@ -136,3 +136,8 @@ footer {
     bottom: 0px;
     padding: 20px;
 }
+
+footer a {
+    color: var(--highlight);
+    text-decoration: underline;
+}
